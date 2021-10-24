@@ -1,13 +1,91 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.clear { clear: both; }
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+font: 18px/1.4 arial, sans-serif;
+color: #333;
+background-color: #ccc;
 }
+#tudo {
+width: 960px;
+margin: 0 auto;
+background: #fff;
+}
+h1, h2, h3, h4, h5, h6 { color: rgb(0, 0, 0); }
+.topo_header  {
+background: #0aacf7;
+padding: 5px 20px;
+}
+.topo_header h1  {
+font-size: 36px;
+margin: 4px 0 2px 0;
+text-align: center;
+color: white
+}
+.topo_header a  {
+/* color: #900; */
+color: #fff;
+text-decoration: none;
+}
+.topo_header h2 {
+font-size: 20px;
+margin: 2px 0 4px 0;
+text-align: right;
+color: #fff;
+}
+.principal {
+width: 720px;
+float: right;
+padding-right:15px;
+}
+/*
+.formulario {
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
+*/
+.auxiliar {
+width: 220px;
+float: left;
+padding-left: 15px;
+}
+.rodape {
+clear: both;
+/* height: 25px; */
+background: #0aacf7;
+color: #fff;
+padding: 5px 0;
+text-align: center;	
+}
+/* Navegação */
+a { text-decoration: none; }
+.auxiliar_navegacao { 
+  margin-top: 10px; 
+}
+ul { 
+list-style: none; 
+padding:0;
+margin:0;
+}
+.auxiliar_navegacao a {
+background: #0aacf7;
+color: #fff;
+display: block;
+margin-bottom: 1px;
+line-height: 2;
+padding-left: 15px;
+text-transform: capitalize;
+}
+.auxiliar_navegacao a:hover {
+background: #036;
+}
+/*
+.auxiliar_parceiros_imagens figure { 
+height: 150px;
+width: 150px;
+margin
+algum errinho
+}
+*/
