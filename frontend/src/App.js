@@ -1,10 +1,23 @@
 import './assets/css/App.css';
 
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
+import Cadastrar from './pages/cadastro.js';
+import Inicio from './pages/inicio.js';
+
+
 function App() {
   return (
-    <div className="App">
-      App
-    </div>
+
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/" exact component={Inicio} />
+          <Route path="/cadastro" component={Cadastrar} />
+        </Switch>
+      </div>
+    </Router>
+
   );
 }
 
