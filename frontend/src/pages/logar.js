@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 import logo from "../assets/img/logo.png";
 
-function Cadastro(){
+function Login(){
     return(
         <div id="tudo"> 
 
@@ -15,7 +15,7 @@ function Cadastro(){
     
             <div class="principal">
                 <main>
-                    <h1>Cadastro</h1>
+                    <h1>Login</h1>
                 </main>
 	        </div> 
     
@@ -46,4 +46,4 @@ function Cadastro(){
     );
 }
 
-export default Cadastro;
+export default Login;
