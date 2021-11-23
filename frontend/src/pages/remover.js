@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 import logo from "../assets/img/logo.png";
 
-function Alterar(){
+function Remover(){
     return(
         <div id="tudo"> 
 
@@ -46,4 +46,4 @@ function Alterar(){
     );
 }
 
-export default Alterar;
+export default Remover;

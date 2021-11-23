@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 import logo from "../assets/img/logo.png";
+
 function Inicio (){
     return(
         <div id="tudo"> 
@@ -30,6 +31,8 @@ function Inicio (){
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/login">Login</Link></li> 
                         <li><Link to="/cadastro">Cadastro</Link></li>
+                        <li><Link to="/atualizar">Atualizar</Link></li>
+                        <li><Link to="/remover">Remover</Link></li>
                         <li><Link to="/about">Sobre nós</Link></li>
                     </ul>
                 </nav>
@@ -40,12 +43,12 @@ function Inicio (){
             </div> 
     
             <div class="rodape">
-            <footer>
-                <small>Site para o projeto - 2021 &copy; Nenhum direito reservado</small>
-            </footer>
-	    </div>
+                <footer>
+                    <small>Site para o projeto - 2021 &copy; Nenhum direito reservado</small>
+                </footer>
+	        </div>
 
-</div>
+        </div>
     );
 }
 
