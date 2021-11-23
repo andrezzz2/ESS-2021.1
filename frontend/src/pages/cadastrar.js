@@ -15,7 +15,7 @@ function Cadastro(){
     
             <div class="principal">
                 <main>
-                    <h1>Atualizar cadastro</h1>
+                    <h1>Cadastrar</h1>
                 </main>
 	        </div> 
     

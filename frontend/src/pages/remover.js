@@ -15,7 +15,7 @@ function Remover(){
     
             <div class="principal">
                 <main>
-                    <h1>Atualizar cadastro</h1>
+                    <h1>Remover cadastro</h1>
                 </main>
 	        </div> 
     
