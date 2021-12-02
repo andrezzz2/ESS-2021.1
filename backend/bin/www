@@ -13,28 +13,25 @@ const sequelize = require('../models');
 sequelize.sync().then();
 //sequelize.sync({force: true}).then(); //somente se quiser zerar o BD, se for o caso descomentar a criaçao de bibliotecario padrao
 
-/**
- * Get port from environment and store in Express.
- */
-
 var port = process.env.PORT || '8080';
 app.set('port', port);
 
-/**
- * Create HTTP server.
- */
+// Create HTTP server and Listen on provided port.
 
 var server = http.createServer(app);
 
-/**
- * Listen on provided port, on all network interfaces.
- */
+//Listen on provided port, on all network interfaces.
 
 server.listen(port, function(){
     console.log("Listening on " + port);
 });
 server.on('error', onError);
 server.on('listening', onListening);
+
+
+
+
+
 
 
 /**
