@@ -1,6 +1,6 @@
 import Navbar from '../components/navbar.js';
 
-function Sobre(){
+function Historico(){
     return(
         <div>
             <Navbar/>
@@ -22,4 +22,4 @@ function Sobre(){
     );
 }
 
-export default Sobre;
+export default Historico;
