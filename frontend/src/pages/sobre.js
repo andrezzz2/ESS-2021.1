@@ -1,4 +1,5 @@
 import Navbar from '../components/navbar.js';
+import Footer from '../components/footer.js';
 
 function Sobre(){
     return(
@@ -14,10 +15,7 @@ function Sobre(){
                     </div>      
                 </div>      
             </section>
-            <footer>
-                <p><i class="fas fa-utensils"></i> Servindo nosso clientes com excelência desde o começo!<i class="fas fa-heartbeat"></i></p>
-            </footer>
-
+            <Footer/>
         </div>
     );
 }

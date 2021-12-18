@@ -3,12 +3,12 @@ const User = require("../models/Clientes");
 exports.cadastrar = (req, res) => {
     try{
         User.findByPk(req.body.cpf).then(user => {         
-            if(user == null) {   
+            if(user == null) {   //nenhuma pessoa cadastrada com o cpf
                 User.findOne({where: {"email": req.body.email}}).then(user2 =>{
-                    if(user2 == null){
-                        if(req.body.password.length >= 8){
+                    if(user2 == null){   //nenhuma pessoa cadastrada com email
+                        if(req.body.password.length >= 8){   //senha com no mínimo 8 dígitos
                             req.body.userType = 1;
-                            User.create(req.body).then(user3 => {  
+                            User.create(req.body).then(user3 => {  //cadastrando usuário 
                                 res.status(201).send("Cadastro feito com sucesso!");
                             });
                         }

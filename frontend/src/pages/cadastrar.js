@@ -1,4 +1,5 @@
 import Navbar from '../components/navbar.js';
+import Footer from '../components/footer.js';
 
 function Cadastro(){
     return(
@@ -6,7 +7,7 @@ function Cadastro(){
            <Navbar/>
             <section id="search-field">
                 <div class="descricao">
-                    <h3>Aqui está o nosso historico de pedidos:</h3>
+                    <h3>Cadastro</h3>
                 </div>
                 <div class="area-busca">
                     <div class="temp">
@@ -14,10 +15,7 @@ function Cadastro(){
                     </div>      
                 </div>      
             </section>
-            <footer>
-                <p><i class="fas fa-utensils"></i> Servindo nosso clientes com excelência desde o começo!<i class="fas fa-heartbeat"></i></p>
-            </footer>
-
+            <Footer/>
         </div>
     );
 }
