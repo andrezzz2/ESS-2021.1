@@ -14,15 +14,15 @@ exports.cadastrar = (req, res) => {
                             });
                         }
                         else{
-                            res.status(401).send("A senha deve conter no mínimo 8 dígitos.");
+                            res.status(200).send("A senha deve conter no mínimo 8 dígitos.");
                         }
                     }
                     else{
-                        res.status(401).send("Email já utilizado.");
+                        res.status(200).send("Email já utilizado.");
                     }
                 });
             }else{
-                res.status(401).send("CPF já cadastrado.");
+                res.status(200).send("CPF já cadastrado.");
             }
         });
     }catch(error) {

@@ -1,8 +1,9 @@
-var path = require('path');
 var express = require('express');
+var cors = require('cors')
 var cookieParser = require('cookie-parser');
 
 var app = express();
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(cookieParser());
