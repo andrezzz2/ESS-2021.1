@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('.');
+const sequelize = require('./');
 
 const Historico = sequelize.define('Historico', {
     Restaurant_Name: {type:DataTypes.STRING},

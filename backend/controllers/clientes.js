@@ -1,4 +1,5 @@
 const User = require("../models/Clientes");
+const Historico = require("../models/Historico");
 
 exports.cadastrar = (req, res) => {
     try{
@@ -31,4 +32,10 @@ exports.cadastrar = (req, res) => {
 
 exports.get = (req, res) => {
     res.send("servidor está ativo");
+}
+
+exports.cadastrarPedidos = (req, res) => {
+    Historico.create(req.body).then(historico => {  //cadastrando historico
+        res.status(201).send("Cadastro feito com sucesso!");
+    });
 }
