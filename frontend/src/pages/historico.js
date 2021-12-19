@@ -1,5 +1,6 @@
 import Navbar from '../components/navbar.js';
 import Footer from '../components/footer.js';
+import historico from '../assets/historicoPedido.js';
 
 function Historico(){
     return(
@@ -11,7 +12,7 @@ function Historico(){
                 </div>
                 <div class="area-busca">
                     <div class="temp">
-
+                        {historico.historico[0].Restaurant_Name}
                     </div>      
                 </div>      
             </section>
