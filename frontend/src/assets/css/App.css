@@ -5,7 +5,7 @@
 
 
 nav ul li{
-  padding: 0px 30px 0px 30px;
+  padding: 0px 1rem 0px 1rem;
 }
 
 .link{
@@ -15,7 +15,7 @@ nav ul li{
 
 nav ul li a:hover{
   height: 130px;
-  padding: 50px;
+  padding: 60px 30px 60px 30px;
   background-color: aliceblue;
 }
 
@@ -36,6 +36,7 @@ footer p{
   color: aliceblue;
   margin-bottom: 0;
   padding-bottom: 0;
+
 }
 
 
@@ -52,38 +53,10 @@ footer p{
   background-image: url("../img/restaurante.jpg");
   background-position: center;
   background-size: 100%;
-  height: 500px;
+  height: 100vh;
   color: aliceblue;
 }
 
 #search-field h3{
   padding-bottom: 50px;
-}
-
-@media only screen and (max-width:1000px){   
-  nav ul li{
-      background-color: #1c1c1c;
-      text-align: center;
-  }
-  
-  #search{
-      display: none;
-  }
-
-  #searchb{
-      display: none;
-  }
-  
-  #linkf:hover{
-      background-image: none;
-  }
-
-  #links:hover{
-      background-image: none;
-  }
-  
-  #linkt:hover{
-      background-image: none;
-  }
-
 }

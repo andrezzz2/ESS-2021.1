@@ -7,7 +7,6 @@ function Alterar(){
             <Navbar/>
             <section id="search-field">
                 <div class="descricao">
-                    <h3>Aqui está o nosso historico de pedidos:</h3>
                 </div>
                 <div class="area-busca">
                     <div class="temp">
