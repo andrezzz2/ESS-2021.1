@@ -33,3 +33,8 @@ Para iniciar o server do front-end:
 
 Para fazer os testes:
 
+-cd test-acceptance
+
+-npm install
+
+-npm test
