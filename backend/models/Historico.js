@@ -3,10 +3,11 @@ const sequelize = require('./');
 
 const Historico = sequelize.define('Historico', {
     Restaurant_Name: {type:DataTypes.STRING},
-    Valor_Pedido: {type:DataTypes.NUMBER}
+    Valor_Pedido: {type:DataTypes.NUMBER},
+    Data_Hora: {type:DataTypes.STRING}
 }, {
     sequelize,
-    timestamps: true
+    timestamps: false
 });
 
 module.exports = Historico;
