@@ -30,12 +30,25 @@ exports.cadastrar = (req, res) => {
     }
 }
 
-exports.get = (req, res) => {
-    res.send("servidor está ativo");
-}
+exports.remover = (req, res) => {
 
-exports.cadastrarPedidos = (req, res) => {
-    Historico.create(req.body).then(historico => {  //cadastrando historico
-        res.status(201).send("Cadastro feito com sucesso!");
-    });
+    try{
+        User.findByPk(req.body.cpf).then(user => {
+            if(user == null) {   //nenhuma pessoa cadastrada com o cpf
+                res.status(200).send("CPF não cadastrado.");
+            }
+            else{
+                if(req.body.password == user.password){
+                    User.destroy({ where: { "cpf" : req.body.cpf } }).then(() => {
+                        res.status(200).send("Removido com sucesso.");
+                    });
+                }
+                else{
+                    res.status(200).send("Senha incorreta.");
+                }
+            }
+        });
+    }catch(error) {
+        return res.status(500).send("Falha ao criar.");
+    }   
 }

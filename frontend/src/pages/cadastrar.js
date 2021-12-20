@@ -19,17 +19,12 @@ function Cadastro(){
         requisicaoAoServidor.telefone = document.querySelector("#telefone").value
         requisicaoAoServidor.password = document.querySelector("#password").value
         console.log(requisicaoAoServidor);
-        api.post("/clientes", requisicaoAoServidor).then((response)=>{
+        api.post("/clientes/cadastrar", requisicaoAoServidor).then((response)=>{
             setRespostaDoServidor(response.data);
             console.log(respostaDoServidor);
         });
     }
-    /*
-    useEffect(() => {
-        console.log(document.getElementById("resposta").innerHtml);
-        document.getElementById("resposta").innerHtml = respostaDoServidor;
-    }, [respostaDoServidor]);
-    */
+
     return(
         <div>
            <Navbar/>

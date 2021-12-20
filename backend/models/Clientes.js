@@ -4,9 +4,10 @@ const sequelize = require('./');
 const Cliente = sequelize.define('Cliente', {
     name: {type:DataTypes.STRING},
     lastname: {type:DataTypes.STRING},
-    cpf: {type: DataTypes.INTEGER, primaryKey: true},
+    cpf: {type: DataTypes.STRING, primaryKey: true},
+    birth_date: {type: DataTypes.DATE},
     email: {type: DataTypes.STRING},
-    telefone: {type: DataTypes.INTEGER},
+    telefone: {type: DataTypes.STRING},
     password: {type:DataTypes.STRING},
     userType: {type:DataTypes.INTEGER}
 }, {

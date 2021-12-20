@@ -2,8 +2,7 @@ var express = require('express');
 var router = express.Router();
 const clientesController = require('../controllers/clientes.js');
 
-router.post('/', clientesController.cadastrar);
-router.get('/', clientesController.get);
-router.post('/Historico', clientesController.cadastrarPedidos);
+router.post('/cadastrar', clientesController.cadastrar);
+router.post('/remover', clientesController.remover);
 
 module.exports = router;
