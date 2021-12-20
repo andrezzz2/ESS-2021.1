@@ -17,6 +17,8 @@ Para iniciar o server do back-end:
 
 -cd backend
 
+-npm install
+
 -npm start
 
 
@@ -24,4 +26,10 @@ Para iniciar o server do front-end:
 
 -cd frontend
 
+-npm install
+
 -yarn start
+
+
+Para fazer os testes:
+
