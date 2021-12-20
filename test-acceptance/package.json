@@ -1,0 +1,19 @@
+{
+  "name": "test-acceptance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node historico.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "protractor": "^7.0.0"
+  },
+  "devDependencies": {
+    "cucumber": "^7.0.0-rc.0"
+  }
+}

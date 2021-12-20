@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom';
+//import { historico } from '../assets/historicoPedido';
 import logo from "../assets/img/logo.png";
 
 function Navbar(){
@@ -24,7 +25,7 @@ function Navbar(){
                                 <li><Link to="/remover" className="link">Remover</Link></li>
                             </li>
                             <li class="nav-item">
-                                <li><Link to="/historico" className="link">Histórico de pedidos</Link></li>
+                                <li><Link to="/historico" className="link" id = "historico">Histórico de pedidos</Link></li>
                             </li>
                             <li class="nav-item">
                                 <li><Link to="/about" className="link">Sobre nós</Link></li>

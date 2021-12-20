@@ -29,11 +29,6 @@ function Historico(){
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                            <td>{historico.historico[2].Restaurant_Name}</td>
-                            <td>{historico.historico[2].Valor_Pedido}</td>
-                            <td>{historico.historico[2].Data_Hora}</td>
-                            </tr>
                             {x}
                         </tbody>    
                         </table>    
