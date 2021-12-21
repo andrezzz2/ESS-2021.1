@@ -10,7 +10,7 @@ exports.cadastrar = (req, res) => {
                         if(req.body.password.length >= 8){   //senha com no mínimo 8 dígitos
                             req.body.userType = 1;
                             User.create(req.body).then(user3 => {  //cadastrando usuário 
-                                res.status(201).send("Cadastro feito com sucesso!");
+                                res.status(200).send("Cadastro feito com sucesso.");
                             });
                         }
                         else{

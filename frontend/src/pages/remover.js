@@ -38,7 +38,7 @@ function Remover(){
                         <input type="password" id="password" name="password"/>
                     </p>
                     <p>
-                        <button onClick={remover}>Remover</button>
+                        <button id="remover" onClick={remover}>Remover</button>
                     </p>    
                     <p id = "resp-remover"> {respostaDoServidor} </p>
                 </div>      

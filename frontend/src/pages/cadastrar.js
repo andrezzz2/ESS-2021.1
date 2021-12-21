@@ -62,7 +62,7 @@ function Cadastro(){
                         <input type="password" id="password" name="password"/>
                     </p>
                     <p>
-                        <button onClick={cadastrar}>Cadastrar</button>
+                        <button id="cadastrar" onClick={cadastrar}>Cadastrar</button>
                     </p>
                     <p id="resp-cadastrar"> {respostaDoServidor} </p>
                 </div>      
