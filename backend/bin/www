@@ -6,8 +6,8 @@ var http = require('http');
 const sequelize = require('../models');
 
 //Sincronizar o DB
-sequelize.sync().then();
-//sequelize.sync({force: true}).then(); //somente se quiser zerar o BD, se for o caso descomentar a criaçao de bibliotecario padrao
+//sequelize.sync().then();  //iniciar sem apagar o BD anterior
+sequelize.sync({force: true}).then(); //somente se quiser zerar o BD
 
 var port = process.env.PORT || '8080';
 app.set('port', port);
