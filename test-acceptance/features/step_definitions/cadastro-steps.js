@@ -1,7 +1,7 @@
 require('chromedriver');
 const seleniumWebdriver = require('selenium-webdriver');
 const {By} = require('selenium-webdriver');
-let driver = new seleniumWebdriver.Builder()
+driver = new seleniumWebdriver.Builder()
                   .forBrowser('chrome')
                   .build();
 
@@ -29,7 +29,10 @@ When('Eu clico no botão "cadastrar"', async () => {
     await driver.actions().click(botao).perform();
 })
 Then('O site de cadastro me mostra uma mensagem de {string}', (string) => {
-    driver.findElement(By.id("resp-cadastrar")).getAttribute("innerHTML").then((mensagem)=>{
+    //driver.findElement(By.id("resp-cadastrar")).getAttribute("innerHTML").then((mensagem)=>{
+    driver.findElement(By.id("resp-cadastrar")).getText().then((mensagem)=>{
         expect(mensagem).equal(string);
+    }).catch((err) => {
+        console.error("Handling promise rejection", err);
     });
 })

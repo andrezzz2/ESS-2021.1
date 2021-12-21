@@ -21,6 +21,13 @@ sequelize.sync({force: true}).then(()=>{
   User.create(first_user).then(() => {  //cadastrando o primeiro usuário 
       console.log("primeiro usuário cadastrado");
   });
+
+  let second_user = {};
+  second_user.cpf = "01010101010";
+  second_user.password = "12345678";
+  User.create(second_user).then(() => {  //cadastrando o primeiro usuário 
+    console.log("segundo usuário cadastrado");
+  });
 }); //somente se quiser zerar o BD
 
 
