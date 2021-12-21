@@ -1,4 +1,4 @@
-Feature: Historico page
+Feature: Remover-Historico page
 
     Scenario: Acessar historico a partir da pagina remover
         Given Eu estou no link "/remover"

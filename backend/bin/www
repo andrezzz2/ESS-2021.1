@@ -7,7 +7,23 @@ const sequelize = require('../models');
 
 //Sincronizar o DB
 //sequelize.sync().then();  //iniciar sem apagar o BD anterior
-sequelize.sync({force: true}).then(); //somente se quiser zerar o BD
+sequelize.sync({force: true}).then(()=>{
+  const User = require('../models/Clientes.js');
+  let first_user = {};
+  first_user.name = "Matheus";
+  first_user.lastname = "Mariano";
+  first_user.cpf = "99999999999";
+  first_user.birth_date = "1999/07/22";
+  first_user.email = "matheus@email.com";
+  first_user.telefone = "912345678";
+  first_user.password = "senha123";
+  first_user.userType = 1;
+  User.create(first_user).then(() => {  //cadastrando o primeiro usuário 
+      console.log("primeiro usuário cadastrado");
+  });
+}); //somente se quiser zerar o BD
+
+
 
 var port = process.env.PORT || '8080';
 app.set('port', port);
@@ -17,6 +33,12 @@ app.set('port', port);
 var server = http.createServer(app);
 
 //Listen on provided port, on all network interfaces.
+
+
+
+
+
+
 
 server.listen(port, function(){
     console.log("Listening on " + port);

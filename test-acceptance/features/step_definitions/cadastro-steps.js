@@ -28,7 +28,8 @@ When('Eu clico no botão "cadastrar"', async () => {
     const botao = await driver.findElement(By.id("cadastrar"));
     await driver.actions().click(botao).perform();
 })
-Then('O site de cadastro me mostra uma mensagem de {string}', async (string) => {
-    const mensagem = await driver.findElement(By.id("resp-cadastrar")).getText();
-    expect(mensagem).equal(string);
+Then('O site de cadastro me mostra uma mensagem de {string}', (string) => {
+    driver.findElement(By.id("resp-cadastrar")).getAttribute("innerHTML").then((mensagem)=>{
+        expect(mensagem).equal(string);
+    });
 })

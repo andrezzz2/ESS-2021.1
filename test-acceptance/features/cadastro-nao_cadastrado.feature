@@ -1,4 +1,4 @@
-Feature: Register page
+Feature: Correct Register page
 
     Scenario: Fazendo cadastro de usuário não cadastrado
         Given Eu estou no link do cadastro

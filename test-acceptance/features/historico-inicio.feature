@@ -1,4 +1,4 @@
-Feature: Historico page
+Feature: Inicio-Historico page
 
     Scenario: Acessar historico a partir da pagina inicial
         Given Eu estou no link "/"
