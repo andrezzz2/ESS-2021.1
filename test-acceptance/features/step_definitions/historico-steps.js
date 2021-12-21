@@ -7,19 +7,19 @@ let driver = new seleniumWebdriver.Builder()
 
 const { Given, When, Then } = require('cucumber');
 const {expect} = require('chai');
-                  
 
-Given('Eu estou na página inicial', {timeout: 60 *1000}, async () => {
+
+Given('Eu estou no link {string}', {timeout: 60 *1000}, async (string) => {
     await driver.manage().window().maximize();
-    await driver.get('http://localhost:3000');
+    await driver.get('http://localhost:3000'+string);
 })
-When('Eu clico na aba de {string}', async (string) => {
-    const historico = await driver.findElement(By.id('historico'));
+When('Eu clico na aba de "historico de pedidos"', async () => {
+    const historico = await driver.findElement(By.id("historico"));
     //const vegetable = driver.findElement(By.className('tomatoes'));
     //driver.findElement(By.name('q')).sendKeys('webdriver', Key.ENTER);
     await driver.actions().click(historico).perform();
 })
-Then('O site me redireciona para a página {string}', async (string) => {
+Then('O site me redireciona para a página "historico de pedidos"', async () => {
     const current = await driver.getCurrentUrl();
     //assert.equal(current, "http://localhost:3000/historico");
     expect(current).equal("http://localhost:3000/historico");
