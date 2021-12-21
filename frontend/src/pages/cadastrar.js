@@ -64,7 +64,7 @@ function Cadastro(){
                     <p>
                         <button onClick={cadastrar}>Cadastrar</button>
                     </p>
-                    <h6> {respostaDoServidor} </h6>
+                    <p id="resp-cadastrar"> {respostaDoServidor} </p>
                 </div>      
             </section>
             <Footer/>
