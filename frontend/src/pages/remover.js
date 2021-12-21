@@ -40,7 +40,7 @@ function Remover(){
                     <p>
                         <button onClick={remover}>Remover</button>
                     </p>    
-                    <h6> {respostaDoServidor} </h6>
+                    <p id = "resp-remover"> {respostaDoServidor} </p>
                 </div>      
             </section>
             <Footer/>
